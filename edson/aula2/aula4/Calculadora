@@ -1,0 +1,32 @@
+    package calculadora;
+    
+    private class Funcionalidades {
+
+        private int num1;
+        private int num2;
+
+        //getter amd setter
+        public void setNum1(int num1) {
+            this.num1 = num1;
+        }
+
+        public void setNum2(int num2) {
+            this.num2 = num2;
+            //metodos comportamentais = os verbos da classe
+            // inserir anotar, 
+        }
+        public int Somar(int v1, int v2){
+            this.num1 =v1;
+            this.num2 =v2;
+            return (this.num1+this.num2);
+        }
+    }
+
+
+public class Calculadora {
+    public static void main(String[] args) {
+        Funcionalidades soma = new Funcionalidades();
+        System.out.println(soma.Somar(10, 20));
+    }
+
+}
