@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main (){
+      int a, b, x, r;
+      printf ("Digite o valor para a: ");
+      scanf ("%d", &a);
+      printf ("Digite o valor para b: ");
+      scanf ("%d", &b);
+      
+      x= a + b; //3
+ 
+      if (x >= 10)//se 3 f maior q 10
+          r = x + 5; // x = +5
+      else
+          r = x - 7; //se nn  x - 7
+          
+      printf ("\n Valor de r:%d", r);
+      
+      return 0;
+}
