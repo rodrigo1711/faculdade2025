@@ -1,6 +1,6 @@
     package calculadora;
     
-    private class Funcionalidades {
+    class Funcionalidades {
 
         private int num1;
         private int num2;
@@ -30,6 +30,7 @@ public class Calculadora {
     }
 
 }
+
 
 
 
