@@ -1,0 +1,36 @@
+#include <stdio.h>
+ 
+int main (){
+   int local;
+   printf("digite a localização, entre 1 e 10:");
+   scanf("%d",&local);
+   switch(local){
+       case 1:
+       printf("sul");
+       break;
+       case 2:
+       printf("leste");
+        break;
+       case 3:
+       printf("oeste");
+        break;
+       case 4:
+       printf("leste");
+       break;
+       case 5:
+       case 6:
+       printf("nordeste");
+       break;
+       case 7:
+       case 8:
+       case 9:
+       printf("sudeste");
+       break;
+       case 10:
+       printf("centro-oeste");
+       break;
+       default:
+       printf("número não encontrado");
+   }
+     return 0; 
+}
