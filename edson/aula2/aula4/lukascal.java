@@ -29,7 +29,7 @@ class Funcionalidades {
         return (this.num1 / this.num2);
     }
    
- //   public int TestImpasOuPar(){
+ //   public int TestImparOuPar(){
  //       return (getSoma() % 2 == 0)? 1:0;
 //    }
 }
@@ -50,7 +50,7 @@ public class CalLucas {
         System.out.println("Subtração: " + calcula.getSubtrair());
         System.out.println("Multiplicação: " + calcula.getMultiplicar());
         System.out.println("Divisão: " + calcula.getDividir());
-        //System.out.println("o resultado da soma é : " + calcula.getTestImpasOuPar());
+        //System.out.println("a soma é : " + calcula.getTestImparOuPar());
         
         sc.close();
     }
