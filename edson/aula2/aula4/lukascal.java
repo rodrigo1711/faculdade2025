@@ -1,4 +1,5 @@
-package calculadora;
+package callucas;
+import java.util.Scanner;
 
 class Funcionalidades {
 
@@ -11,6 +12,9 @@ class Funcionalidades {
 
     public void setNum2(int num2) {
         this.num2 = num2;
+    }
+    public int getSoma() { //soma adicionada (nn original do lucas, mas segui o padrao)
+        return (this.num1 + this.num2);
     }
 
     public int getSubtrair() {
@@ -25,22 +29,29 @@ class Funcionalidades {
         return (this.num1 / this.num2);
     }
    
-    public String testImpasOuPar(){
-        return (this.num1 % 2 == 0)?"PAR:IMPAR";
-    }
+ //   public int TestImpasOuPar(){
+ //       return (getSoma() % 2 == 0)? 1:0;
+//    }
 }
 
 
-public class Calculadora {
+public class CalLucas {
     public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
         Funcionalidades calcula = new Funcionalidades();
+        System.out.println("insira o primeiro numero");
+        calcula.setNum1(sc.nextInt());
+        System.out.println("insira o primeiro numero");
+        calcula.setNum2(sc.nextInt());
        
-        calcula.setNum1(10);
-        calcula.setNum2(20);
-       
+        System.out.println("Soma: " + calcula.getSoma()); //(same)
         System.out.println("Subtração: " + calcula.getSubtrair());
         System.out.println("Multiplicação: " + calcula.getMultiplicar());
         System.out.println("Divisão: " + calcula.getDividir());
-       
+        //System.out.println("o resultado da soma é : " + calcula.getTestImpasOuPar());
+        
+        sc.close();
     }
 }
