@@ -25,3 +25,53 @@ int main()
   }
   return 0;
 }
+
+
+        3
+
+
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  i=0;
+  while (i<11){
+      printf("%d ",i);
+      i+=2;
+  }
+  return 0;
+}
+
+
+
+
+
+        4
+
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  i=0;
+  while (i<=12){
+      printf("%d ",i);
+      i+=2;
+  }
+  return 0;
+}
+// 1 número de iício  0  
+// 2 condição final i<=10 =
+// 3 instrução caso a condição final nn seja alcançada i+=2 = 
+// 4 quantas vezes repetiu 7 = 
+// 5 oq torna a condição falsa 12 = 
+
+
+
+
+
+
+
+
+
