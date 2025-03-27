@@ -69,7 +69,84 @@ int main()
 
 
 
+          5
+// do while
 
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  i=8;
+  while (i<5){
+      printf("%d ",i);
+      i++;
+      
+  }
+  printf("\n %d torna a condição falsa\n",i);
+    i=8;
+    do{ 
+      printf("%d ",i);
+      i++;
+      
+    }while(i<5);
+    printf("\n %d torna a condiçao falsa\n",i);
+  
+  return 0;
+}
+          
+
+            6
+//for
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  for(i=0;i<5;i++){
+      printf("%d ",i);
+}
+    printf("\n %d torna a condiçao falsa\n",i);
+  
+  return 0;
+}
+
+
+
+            7
+
+#include <stdio.h>
+
+int main (){
+	int i,j;
+	
+	for(i=0;i<24;i++) {  //0 1 min
+		for(j=0;j<60;j++) { // 0 1 2 3 seg 
+		  printf("\n%d %d",i,j);
+		}
+	}
+	return 0;
+}
+
+// o looping externo apenas ocorre quando o externo se conclui
+
+
+
+#include <stdio.h>
+
+int main (){
+	int i,j;
+	
+	for(i=2;i<4;i++) {  //0 1 min
+		for(j=3;j<5;j++) { // 0 1 2 3 seg 
+		  printf("\n%d %d",i,j);
+		}
+	}
+	return 0;
+}
+
+// o looping externo apenas ocorre quando o externo se conclui
+para iniciar do 2
 
 
 
