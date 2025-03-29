@@ -16,7 +16,7 @@ class Funcionalidades {
     public void setNum2(int num2) {
         this.num2 = num2;
     }
-    public int getSoma() { //soma adicionada (nn original do lucas, mas segui o padrao)
+    public int getSoma() { //soma adicionada (segui o padrao)
         return (this.num1 + this.num2);
     }
 
