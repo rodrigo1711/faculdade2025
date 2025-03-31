@@ -39,3 +39,60 @@ public class Cal {
 
 }
 
+2
+
+//fazer utilizando apenas m
+package cal;
+import java.util.Scanner;
+
+class Funcionalidades {
+
+    private int num1;
+    private int num2;
+
+    public void setNum1(int num1) {
+        this.num1 = num1;
+    }
+
+    public void setNum2(int num2) {
+        this.num2 = num2;
+    }
+
+    public int somar(int v1, int v2) {
+        this.num1 = v1;
+        this.num2 = v2;
+        return (this.num1 + this.num2);
+    }
+
+   // public int subtrair(int v1,int v2) {
+    //    return (this.num1 - this.num2);
+   // }
+
+}
+
+public class Cal {
+
+    public static void main(String[] args) {
+        
+        Scanner Sc = new Scanner(System.in);
+        
+       
+        
+        Funcionalidades conta = new Funcionalidades();
+        System.out.println("insira o primeiro numero");
+        conta.setNum1(Sc.nextInt());
+        System.out.println("insira o segundo numero");
+        conta.setNum2(Sc.nextInt());
+
+// Funcionalidades subtracao = new Funcionalidades();
+
+        System.out.println(Num1);
+        System.out.println(Num2);
+       // System.out.println(subtracao.subtrair(40, 10));
+        
+    Sc.close();
+    }
+    
+}
+
+
