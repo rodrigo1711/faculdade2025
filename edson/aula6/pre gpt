@@ -13,7 +13,7 @@ class Pessoa {
 
     private int idade;
 
-    public Pessoa() { // método p pegar as infos privadas 
+    public Pessoa() { // método p pegar as infos privadas, o construtor
 
     }
 
@@ -62,8 +62,22 @@ class Pessoa {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        
+        ArrayList<String> nomes = new ArrayList(); //ArrayList Initialization
+                                                    //ArrayList named nomes is initialized to store names.
+        nomes.add("Lucas");
 
-        Pessoa pessoa = new Pessoa();
+        nomes.add("Rodrigo");
+
+        nomes.remove("Lucas");
+
+        nomes.add("pinkman");
+
+        nomes.remove("Rodrigo");
+
+        nomes.add("white");
+
+        Pessoa pessoa = new Pessoa(); //oq exatamente e a criacao desse obj
 
         System.out.print("Insira seu ID: ");
 
@@ -83,19 +97,7 @@ class Pessoa {
 
         pessoa.exibirDados();
 
-        ArrayList<String> nomes = new ArrayList();
-
-        nomes.add("Lucas");
-
-        nomes.add("Rodrigo");
-
-        nomes.remove("Lucas");
-
-        nomes.add("pinkman");
-
-        nomes.remove("Rodrigo");
-
-        nomes.add("white");
+        
 
         for (String nome : nomes) { //para cada nome em nomes = nxtline  
 
