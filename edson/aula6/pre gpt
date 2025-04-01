@@ -119,76 +119,126 @@ class Pessoa {
     }
 
 }
+                                            2
 
-
-
-
+// oq fazer em cs 
 package pessoa;
 
 import java.util.Scanner;
+
 import java.util.ArrayList;
 
 class Pessoa {
 
     private int id;
+
     private String nome;
+
     private int idade;
 
-    public Pessoa() {
+    public Pessoa() { // método p pegar as infos privadas, o construtor
+
     }
 
     public int getId() {
+
         return id;
+
     }
 
     public void setId(int id) {
+
         this.id = id;
+
     }
 
     public String getNome() {
+
         return nome;
+
     }
 
     public void setNome(String nome) {
+
         this.nome = nome;
+
     }
 
     public int getIdade() {
+
         return idade;
+
     }
 
     public void setIdade(int idade) {
+
         this.idade = idade;
+
     }
 
     public void exibirDados() {
+
         System.out.println("ID: " + id + ", Nome: " + nome + ", Idade: " + idade);
+
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        // Criando uma lista de nomes
-        ArrayList<String> nomes = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        
+        ArrayList<String> nomes = new ArrayList(); //ArrayList Initialization
+                                                    //ArrayList named nomes is initialized to store names.
         nomes.add("Lucas");
+
         nomes.add("Rodrigo");
+
+        //nomes.remove("Lucas");
+
         nomes.add("pinkman");
+
+        //nomes.remove("Rodrigo");
+
         nomes.add("white");
 
-        // Solicitar ao usuário que insira um nome
-        System.out.print("Digite um nome para verificar se está na lista: ");
-        String nomeParaVerificar = sc.nextLine();
+        Pessoa pessoa = new Pessoa(); //oq exatamente e a criacao desse obj
 
-        // Verificar se o nome está na lista
-        if (nomes.contains(nomeParaVerificar)) {
-            System.out.println("Nome encontrado: " + nomeParaVerificar);
-        } else {
-            System.out.println("Nome não encontrado.");
+        System.out.print("Insira seu Nome: ");
+
+        pessoa.setNome(sc.nextLine());
+        
+        System.out.print("Insira seu ID: ");
+
+        pessoa.setId(sc.nextInt());
+
+        sc.nextLine(); // Limpa a quebra de linha 
+
+        System.out.print("Informe sua Idade: ");
+
+        pessoa.setIdade(sc.nextInt());
+
+        System.out.println("\nDados cadastrados:");
+
+        pessoa.exibirDados();
+
+        
+            System.out.println("nomes disponíveis");
+        for (String nome : nomes) { //para cada nome em nomes = nxtline  
+
+            System.out.println(nome);
+
         }
 
-        sc.close();
+        if (nomes.contains(pessoa.getNome())) {
+
+            System.out.println(pessoa.getNome() + " está no sistema");
+
+        } else {
+
+            System.out.println("Não Achei o " + pessoa.getNome() );
+
+            // fazer isso para retornar atributos, pesquisa o nome, volta se tem id, nome, numero sla 
+        }
+
     }
+
 }
-
-
-gpt
