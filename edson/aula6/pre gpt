@@ -1,0 +1,119 @@
+// oq fazer em cs 
+package pessoa;
+
+import java.util.Scanner;
+
+import java.util.ArrayList;
+
+class Pessoa {
+
+    private int id;
+
+    private String nome;
+
+    private int idade;
+
+    public Pessoa() { // método p pegar as infos privadas 
+
+    }
+
+    public int getId() {
+
+        return id;
+
+    }
+
+    public void setId(int id) {
+
+        this.id = id;
+
+    }
+
+    public String getNome() {
+
+        return nome;
+
+    }
+
+    public void setNome(String nome) {
+
+        this.nome = nome;
+
+    }
+
+    public int getIdade() {
+
+        return idade;
+
+    }
+
+    public void setIdade(int idade) {
+
+        this.idade = idade;
+
+    }
+
+    public void exibirDados() {
+
+        System.out.println("ID: " + id + ", Nome: " + nome + ", Idade: " + idade);
+
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        Pessoa pessoa = new Pessoa();
+
+        System.out.print("Insira seu ID: ");
+
+        pessoa.setId(sc.nextInt());
+
+        sc.nextLine(); // Limpa a quebra de linha 
+
+        System.out.print("Insira seu Nome: ");
+
+        pessoa.setNome(sc.nextLine());
+
+        System.out.print("Informe sua Idade: ");
+
+        pessoa.setIdade(sc.nextInt());
+
+        System.out.println("\nDados cadastrados:");
+
+        pessoa.exibirDados();
+
+        ArrayList<String> nomes = new ArrayList();
+
+        nomes.add("Lucas");
+
+        nomes.add("Rodrigo");
+
+        nomes.remove("Lucas");
+
+        nomes.add("pinkman");
+
+        nomes.remove("Rodrigo");
+
+        nomes.add("white");
+
+        for (String nome : nomes) { //para cada nome em nomes = nxtline  
+
+            System.out.println(nome);
+
+        }
+
+        if (nomes.contains("Pica-Pau")) {
+
+            System.out.println("Achei o Pica-Pau");
+
+        } else {
+
+            System.out.println("Não Achei o Pica-Pau");
+
+            // fazer isso para retornar atributos, pesquisa o nome, volta se tem id, nome, numero sla 
+        }
+
+    }
+
+}
